@@ -5,6 +5,6 @@ app.get("/",function(req, res){
     res.send("<h1>Just Testing Deploy Nothing Special</h1>");
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("listen 3000");
 });
